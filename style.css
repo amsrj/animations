@@ -20,19 +20,11 @@ body {
 }
 
 .circle img {
-    transform-origin: center bottom;
-    animation-name: fire;
-    animation-duration: .4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-    /* linear는 등속도 움직임이당. 이징이 없음 */
-    animation-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+    transform: scale(0.5);
+    transition: all .4s;
 }
 
-/*
 .circle:hover img {
-    hover되었을때 transform 내용이 통째로 변경 
-    transform: scale(0.5) skewX(10deg);
+    /* transform의 내용물 작성 순서는 중요하다 */
+    transform: scale(0.5) translateX(400px) rotate(360deg) ;
 }
-*/
