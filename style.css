@@ -11,11 +11,12 @@ body {
 }
 
 .circle img {
-    transform: scaleY(0);
-    transform-origin: center bottom;
-    transition: transform .4s;
+    transition: all .4s;
+    /* transform은 여러개의 항목들이 세트로 해석된당 */
+    transform: scale(0.5) skewX(-10deg);
 }
 
 .circle:hover img {
-    transform: scaleY(1);
+    /* hover되었을때 transform 내용이 통째로 변경 */
+    transform: scale(0.5) skewX(10deg);
 }
