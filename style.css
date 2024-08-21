@@ -43,6 +43,7 @@ body {
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-play-state: paused;
 }
 
 .circle img {
@@ -50,5 +51,10 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-play-state: inherit;
+}
+
+.circle:hover {
+    animation-play-state: running;
 }
 
