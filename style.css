@@ -11,10 +11,11 @@ body {
 }
 
 .circle img {
-    transform: scale(0.5);
+    transform: scaleY(0);
+    transform-origin: center bottom;
     transition: transform .4s;
 }
 
 .circle:hover img {
-    transform: scale(0);
+    transform: scaleY(1);
 }
