@@ -10,13 +10,23 @@ body {
     margin: 100px auto;
 }
 
-.circle img {
-    transition: all .4s;
-    /* transform은 여러개의 항목들이 세트로 해석된당 */
-    transform: scale(0.5) skewX(-10deg);
+@keyframes fire {
+    0% {
+        transform: scale(0.5) skewX(-10deg);
+    }
+    100% {
+        transform: scale(0.5) skewX(10deg);
+    }
 }
 
+.circle img {
+    animation-name: fire;
+    animation-duration: 1s;
+}
+
+/*
 .circle:hover img {
-    /* hover되었을때 transform 내용이 통째로 변경 */
+    hover되었을때 transform 내용이 통째로 변경 
     transform: scale(0.5) skewX(10deg);
 }
+*/
