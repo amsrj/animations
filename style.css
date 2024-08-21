@@ -20,8 +20,11 @@ body {
 }
 
 .circle img {
+    transform-origin: center bottom;
     animation-name: fire;
-    animation-duration: 1s;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 /*
